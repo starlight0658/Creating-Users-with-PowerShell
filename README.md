@@ -54,8 +54,8 @@ Built on the [Active Directory Deployment](https://github.com/starlight0658/Acti
 
 All **23 original lab screenshots** are organized chronologically in [`screenshots/`](screenshots/). The sections below document permissions, scripted provisioning, directory validation, and the client-side sign-in test.
 
-<details>
-<summary><strong>Configure Remote Desktop access for domain users</strong> — screenshots 01–07</summary>
+
+### **Configure Remote Desktop access for domain users** — screenshots 01–07
 
 Enabled Remote Desktop for the joined Windows 11 workstation and explicitly granted `MYDOMAIN\Domain Users` remote sign-in permission for this isolated lab.
 
@@ -94,10 +94,9 @@ Verify that MYDOMAIN\Domain Users is listed in Remote Desktop Users.
 
 ![Confirm Domain Users Remote Desktop access](screenshots/07-confirm-domain-users-remote-desktop-access.png)
 
-</details>
 
-<details>
-<summary><strong>Provision users with PowerShell and validate ADUC</strong> — screenshots 08–17</summary>
+
+### **Provision users with PowerShell and validate ADUC** — screenshots 08–17
 
 Used PowerShell ISE on `DC-1` to load and execute a bulk account-creation script. The execution log and ADUC evidence demonstrate that accounts were created in `_EMPLOYEES`.
 
@@ -151,10 +150,9 @@ Check the general properties of one of the new user objects in ADUC.
 
 ![Inspect a generated user account](screenshots/17-inspect-a-generated-user-account.png)
 
-</details>
 
-<details>
-<summary><strong>Test domain sign-in with a generated user</strong> — screenshots 18–23</summary>
+
+### **Test domain sign-in with a generated user** — screenshots 18–23
 
 Logged on to `Client-1` as the newly generated domain user and confirmed the account and Windows profile were established.
 
@@ -188,7 +186,6 @@ Confirm the generated domain user has a Windows profile under C:\Users.
 
 ![Verify client profile created for domain user](screenshots/23-verify-client-profile-created-for-domain-user.png)
 
-</details>
 
 ## Lessons and security considerations
 
